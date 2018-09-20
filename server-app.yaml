@@ -17,5 +17,5 @@ template:
     containers: 
     - image: gcr.io/google-samples/hello-app:1.0 
     name: server-app1 
-   ports: 
+    ports: 
       - containerPort: 8000 
