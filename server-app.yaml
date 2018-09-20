@@ -3,7 +3,7 @@ kind: Deployment
 metadata: 
    name: server-app1 
    labels: 
-run: server-app1 
+   run: server-app1 
 spec: 
   replicas: 3 
   selector: 
@@ -16,6 +16,6 @@ template:
   spec: 
     containers: 
     - image: gcr.io/google-samples/hello-app:1.0 
-    name: server-app1 
-    ports: 
-      - containerPort: 8000 
+      name: server-app1 
+      ports: 
+        - containerPort: 8000 
