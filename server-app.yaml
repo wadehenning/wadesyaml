@@ -1,19 +1,19 @@
 apiVersion: extensions/v1beta1 
 kind: Deployment 
 metadata: 
-   name: server-app1 
-   labels: 
-      run: server-app1 
+  name: server-app1 
+  labels: 
+    run: server-app1 
 spec: 
   replicas: 3 
   selector: 
-     matchLabels: 
+    matchLabels: 
       run: server-app1 
-   template: 
-     metadata: 
-       labels: 
-         run: server-app1 
-     spec: 
+  template: 
+    metadata: 
+      labels: 
+        run: server-app1 
+    spec: 
       containers: 
       - image: gcr.io/google-samples/hello-app:1.0 
         name: server-app1 
