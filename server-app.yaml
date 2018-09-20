@@ -3,7 +3,7 @@ kind: Deployment
 metadata: 
    name: server-app1 
    labels: 
-   run: server-app1 
+run: server-app1 
 spec: 
   replicas: 3 
   selector: 
