@@ -1,12 +1,12 @@
 kind: Service 
 apiVersion: v1 
-  metadata: 
+metadata: 
   name: my-service 
 spec: 
   type: LoadBalancer 
   selector: 
-  run: server-app1 
-ports: 
+    run: server-app1 
+  ports: 
   - protocol: TCP 
-  port: 80 
-  targetPort: 8000 
+    port: 80 
+    targetPort: 8000 
