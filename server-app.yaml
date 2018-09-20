@@ -8,7 +8,7 @@ spec:
   replicas: 3 
   selector: 
      matchLabels: 
-        run: server-app1 
+      run: server-app1 
    template: 
      metadata: 
        labels: 
