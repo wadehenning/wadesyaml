@@ -7,6 +7,6 @@ spec:
   selector: 
     run: server-app1 
   ports: 
-  - protocol: TCP 
+  - protocol: "TCP" 
     port: 80 
     targetPort: 8000 
