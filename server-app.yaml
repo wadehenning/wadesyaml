@@ -15,7 +15,7 @@ spec:
         run: server-app1 
     spec: 
       containers: 
-      - image: gcr.io/dockerprojectid/server-app:fda1
+      - image: gcr.io/dockerprojectid/server-app:v3
         name: server-app1 
         ports: 
         - containerPort: 8000 
