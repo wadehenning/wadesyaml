@@ -1,21 +1,21 @@
 apiVersion: extensions/v1beta1 
 kind: Deployment 
 metadata: 
-  name: server-app1 
+  name: julia-server
   labels: 
-    run: server-app1 
+    run: julia-server
 spec: 
   replicas: 3 
   selector: 
     matchLabels: 
-      run: server-app1 
+      run: julia-server 
   template: 
     metadata: 
       labels: 
-        run: server-app1 
+        run: julia-server
     spec: 
       containers: 
-      - image: gcr.io/dockerprojectid/server-app:v3
-        name: server-app1 
+      - image: gcr.io/dockerprojectid/server-app:v7
+        name: julia-server 
         ports: 
         - containerPort: 8000 
