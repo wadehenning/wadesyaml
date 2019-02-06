@@ -18,4 +18,4 @@ spec:
       - image: gcr.io/dockerprojectid/server-app:v8
         name: julia-server 
         ports: 
-        - containerPort: 8000 
+        - containerPort: 8080 
