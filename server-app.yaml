@@ -15,7 +15,7 @@ spec:
         run: julia-server
     spec: 
       containers: 
-      - image: gcr.io/dockerprojectid/server-app:v7
+      - image: gcr.io/dockerprojectid/server-app:v8
         name: julia-server 
         ports: 
         - containerPort: 8000 
