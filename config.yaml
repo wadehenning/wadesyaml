@@ -1,11 +1,11 @@
 kind: Service 
 apiVersion: v1 
 metadata: 
-  name: my-service 
+  name: julia-service 
 spec: 
   type: LoadBalancer 
   selector: 
-    run: server-app1 
+    run: julia-server 
   ports: 
   - protocol: "TCP" 
     port: 80 
